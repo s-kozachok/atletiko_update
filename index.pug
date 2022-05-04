@@ -1,0 +1,158 @@
+doctype html
+html(lang="uk")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Atletiko.club
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+
+        link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3' crossorigin='anonymous')
+        link(href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
+        link(rel="stylesheet", href="style/main.css")
+    body 
+        .nav_container
+            .nav_logotype
+                img.logo(src="img/logo.svg", alt="Atletiko fitness club logotype")
+            nav.navbar.navbar-expand-lg.navbar-light.bg-light
+                .container-fluid
+                    //- a.navbar-brand(href='#') 
+                    //-     img.logo_img(src="img/logo.svg", alt="logo")
+                    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation')
+                        span.navbar-toggler-icon
+                    #navbarNavDropdown.collapse.navbar-collapse
+                        ul.navbar-nav.justify-content-center
+                            li.nav-item
+                                a.nav-link.active(aria-current='page' href='#') Головна
+                            
+                            li.nav-item.dropdown
+                                a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                                    | Фітнес клуби
+                                ul.dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+                                    li
+                                        a.dropdown-item(href='#') Шевченківський район
+                                    li
+                                        a.dropdown-item(href='#') Подільський район
+                                    li
+                                        a.dropdown-item(href='#') Оболонський район
+                                    li
+                                        a.dropdown-item(href='#') Голосіївський район
+                                    li
+                                        a.dropdown-item(href='#') Святошинський район
+                                    li
+                                        a.dropdown-item(href='#') Деснянський район
+                                    li
+                                        a.dropdown-item(href='#') Дніпровський район
+                                    li
+                                        a.dropdown-item(href='#') Дарницький район
+                                    li
+                                        a.dropdown-item(href='#') Луцьк, вул. Конякіна 30
+
+                            li.nav-item
+                                a.nav-link(href='#') Публічний договір
+                            li.nav-item
+                                a.nav-link(href='#') Відгуки та пропозиції
+                            li.nav-item
+                                a.nav-link(href='#') Вакансії
+                            li.nav-item
+                                a.nav-link(href='#') Франшиза
+                            li.nav-item
+                                a.nav-link(href='#') Контакти
+
+                .nav_socialNetwork
+                    ul.socialNetwork_list
+                        li
+                            a.socialNetwork_link(href="") 
+                                i.fa.fa-lg.fa-telegram(aria-hidden='true')
+                        li
+                            a.socialNetwork_link(href="") 
+                                i.fa.fa-lg.fa-instagram(aria-hidden='true')
+                        li
+                            a.socialNetwork_link(href="") 
+                                i.fa.fa-lg.fa-facebook-official(aria-hidden='true')
+
+
+
+        main
+            .main_container
+                h3.main_container-title Фітнес клуби
+
+                .gym_container
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Шевченківський район] Юрія Іллєнка 48 #[span.working_hours 7:00 - 23:00]
+                    .gym_item
+                        a.gym_item-link(href="#") #[span.district Шевченківський район] Бульварно-Кудрявська 19 #[span.working_hours 7:00 - 23:00]  
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Подільський район] Набережно-Хрещатицька 13б #[span.working_hours 7:00 - 23:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Подільський район] Георгія Гонгадзе 20 #[span.working_hours 7:00 - 23:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Подільський район] Івана Їжакевича 1/24 #[span.working_hours 7:00 - 23:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Оболонський район] Макіївська 3 #[span.working_hours 7:00 - 23:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Оболонський район] Оболонський 32б #[span.working_hours 7:00 - 23:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Голосіївський район] Голосіївський проспект 70-А #[span.working_hours 7:00 - 23:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Голосіївський район] Полковника Потєхіна 12 #[span.working_hours 7:00 - 23:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Святошинський район] Пушиной 27 #[span.working_hours 7:00 - 23:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Святошинський район] Петра Курінного 2б #[span.working_hours 7:00 - 23:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Святошинський район] Булгакова 13 #[span.working_hours 7:00 - 23:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Святошинський район] Миколи Голего 8 #[span.working_hours 7:00 - 23:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Деснянський район] Володимира Маяковського 47а #[span.working_hours 7:00 - 23:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Деснянський район] Володимира Маяковського 68а #[span.working_hours 7:00 - 23:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Дніпровський район] Петра Запорожця 28 #[span.working_hours 7:00 - 23:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Дніпровський район] Раїси Окіпної 9 #[span.working_hours Пн-Пт 7:00 - 23:00, Сб 7:00 - 19:00, #[br]Нд 9:00 - 19:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Дніпровський район] Райдужна 25 #[span.working_hours 7:00 - 23:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Дніпровський район] Павла Тичини 7 #[span.working_hours 7:00 - 23:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Дарницький район] Ревуцького 16а #[span.working_hours 7:00 - 23:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Дарницький район] Кошиця 1/38 #[span.working_hours 7:00 - 23:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Дарницький район] Урлівська 8а #[span.working_hours 7:00 - 23:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Дарницький район] Миколи Бажана 5г #[span.working_hours 8:00 - 22:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Дарницький район] Юрия Литвинского 64 #[span.working_hours 7:00 - 23:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Дарницький район] Петра Григоренко 5а #[span.working_hours 7:00 - 23:00]
+                    .gym_item 
+                        a.gym_item-link(href="#") #[span.district Луцьк] Конякіна 30 #[span.working_hours 7:00 - 23:00]
+                
+                br    
+                h4 Про нас     
+                p Мережа фітнес клубів «АтлетіКо» - ідеальне місце для тих, хто піклується про своє здоров'я. Незалежно від того, хто ви - новачок або підготовлений атлет, в наших фітнес-клубах ви завжди зможете знайти заняття до душі. 
+                p Ви молода мама, яка бажає повернутися в форму після пологів? Спортсмен, який готується до марафону? Офісний працівник, який прагне мати гарну та підтягнуту фігуру? Вступайте до лав наших клієнтів, адже фітнес-клуб «АтлетіКо» - це не просто тренажерний зал. Це місце, де можна не тільки зміцнити здоров'я, а й отримати масу позитивних емоцій.
+                p У фітнес клубах «АтлетіКо» ми об'єднали краще в фітнес-індустрії: сучасне обладнання, команду висококваліфікованих співробітників, ефективні програми, а найважливіше - особливу атмосферу, яка дає можливість відчути підтримку однодумців і отримати задоволення від занять спортом.
+                p Нами розроблені програми тренувань з урахуванням будь-яких інтересів і уподобань незалежно від віку або фізичної підготовки. Чоловіки зможуть відвідати наші тренажерні зали, оснащені першокласним професійним обладнанням. Представниці прекрасної половини людства отримають заряд енергії на групових або персональних тренуваннях.
+                p «АтлетіКо» - це більше, ніж просто фітнес-клуб. Це клуб спортивних задоволень, призначений для близьких по духу людей. Всіх членів нашого клубу об'єднує прагнення бути кращими завжди і у всьому.
+                p Приходьте до нас вже сьогодні і приєднуйтесь до команди здорових і успішних людей!  
+
+
+
+        footer
+            .footer_container
+                span Copyright © atletiko.club
+                span 2004 - 2022
+                     
+
+
+
+
+
+
+
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p' crossorigin='anonymous')
+
