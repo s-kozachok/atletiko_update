@@ -1,12 +1,18 @@
+// VARIABLE
+$main-color-green: #02565b;
+$main-color-yellow: #fcb512;
+$main-color-red: #c41d39;
+// VARIABLE
+
+
 body{
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: #f7f8f9;
 }
-*ul{
+ul{
     padding: 0;
-    
 }
 li{
     list-style: none;
@@ -26,13 +32,13 @@ a{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    background-color: #02565b;
+    background-color: $main-color-green;
 
     .nav_logotype{
         width: 300px;
         .logo{
             width: 300px;
-            height: 50px;
+            height: 60px;
         }
     }
 
@@ -48,7 +54,7 @@ a{
         }
         .socialNetwork_link{
             display: block;
-            color:#fcb512;
+            color: $main-color-yellow;
             padding: 10px;
             font-size: 18px;
         }
@@ -57,14 +63,11 @@ a{
 }
 
 
-
 .navbar{
     width: 100%;
-    height: 50px;
-    background-color: #02565b !important;
-    
+    height: 60px;
+    background-color: $main-color-green !important;
 }
-
 .container-fluid{
     padding: 0;
 }
@@ -77,16 +80,60 @@ a{
 }
 .dropdown-menu{
     margin-top: 5px !important;
-    margin-left: -5px;    
-    background-color: #02565b;
+    margin-left: -32px; 
+    padding: 0;   
+    background-color: $main-color-green;
     border: none;
     border-radius: 0;
-    .dropdown-item{
+}
+.dropdown-item{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    border-bottom: 0.1px solid gray;
+    padding: 10px 2px 10px 10px !important;
+    transition: 0.2s all;
+    
+    &:hover{
         color: #fff;
+        background-color: #c41d39!important;
+    }
+    .arrow-right{
+        display: block;
+        color: #fcb512;
+        transition: 0.2s all;
+    }
+    &:hover .arrow-right{
+        color: #fcb512;
     }
 }
-.logo_img{
-    height: 50px;
+.dropdown-menu_list{
+    position: relative;
+}
+.dropdown-menu_subitem{
+    padding: 0;
+    position: absolute;
+    min-width: 260px;
+    margin-top: -45px;
+    margin-left: 205px;
+    border-left: 5px solid #fcb512;
+    background-color: #02565b;
+    display: none;
+}
+.dropdown-menu_subitem-link{
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    padding: 10px 2px;
+    border-bottom: 1px solid gray;
+    transition: 0.2s all;
+
+    &:hover{
+        color: #fff;
+        background-color: #c41d39!important;
+    }
+
+
 }
 // NAVIGATION 
 
@@ -143,7 +190,7 @@ a{
 
                 &:hover{
                     background-color: rgba(0,0,0, 0.0);
-                    box-shadow: 0px 0px 8px rgb(82, 82, 82); 
+                    box-shadow: 0px 0px 6px rgb(82, 82, 82); 
                     border-radius: 2px;
                 }
                 .district{
